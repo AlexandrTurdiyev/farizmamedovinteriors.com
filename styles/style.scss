@@ -761,10 +761,10 @@ textarea.form__input {
   bottom: 0;
   left: 0;
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #000000;
   z-index: 1;
   transition: all 1s ease-out;
   &--hidden {
@@ -1160,4 +1160,11 @@ img {
 
 /* "style.css" [end] */
 
+/* ARTICLES - LAZY LOADING */
+picture {
+  max-width: calc(100% - 3rem);
+  min-height: 80vh;
+}
+
+/* ARTICLES - LAZY LOADING [end] */
 
