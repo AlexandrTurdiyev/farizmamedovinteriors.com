@@ -1160,4 +1160,11 @@ img {
 
 /* "style.css" [end] */
 
+/* ARTICLES - LAZY LOADING */
+picture {
+  max-width: calc(100% - 3rem);
+  min-height: 80vh;
+}
+
+/* ARTICLES - LAZY LOADING [end] */
 
