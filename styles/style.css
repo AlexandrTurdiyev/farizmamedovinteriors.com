@@ -1107,6 +1107,10 @@ picture {
   min-height: 80vh;
 }
 
+.article__img {
+  min-height: 900px;
+}
+
 /* ARTICLES - LAZY LOADING [end] */
 
 /*# sourceMappingURL=style.css.map */
