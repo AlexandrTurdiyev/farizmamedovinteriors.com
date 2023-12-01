@@ -46,7 +46,7 @@ const architectureItems = [
         itemName: "item-6",
         itemUrl: "../pages/articles/projects/residential/zhk-rams-city-almaty-2023.html",
         itemImgUrl: "../images/articles/projects/resedentail/zhk-rams-city-almaty-2023/preview/zhk_rams_city_almaty_2023_1_preview@2x.webp",
-        itemText: "Кафе VANILLA, Алматы 2023 (В процессе реализации)",
+        itemText: "ЖК Rams City, Алматы 2023 (В процессе реализации)",
         category: "residential",
     },
 ]
