@@ -25,6 +25,30 @@ const architectureItems = [
         itemText: "Кофейня «Momento», Алматы 2023",
         category: "commercial",
     },
+    {
+        /* 4 */
+        itemName: "item-4",
+        itemUrl: "../pages/articles/projects/residential/zhk-atlant-almaty-2021.html",
+        itemImgUrl: "../images/articles/projects/resedentail/zhk-atlant-almaty-2021/preview/zhk_atlant_almaty_2021_5_preview@2x.webp",
+        itemText: "ЖК ATLANT, Алматы 2021",
+        category: "residential",
+    },
+    {
+        /* 5 */
+        itemName: "item-5",
+        itemUrl: "../pages/articles/projects/commercial/cafe-vanilla-almaty-2023.html",
+        itemImgUrl: "../images/articles/projects/commercial/cafe-vanilla-almaty-2023/preview/cafe_vanilla_almaty_2023_3_preview@2x.webp",
+        itemText: "Кафе VANILLA, Алматы 2023 (В процессе реализации)",
+        category: "commercial",
+    },
+    {
+        /* 6 */
+        itemName: "item-6",
+        itemUrl: "../pages/articles/projects/residential/zhk-rams-city-almaty-2023.html",
+        itemImgUrl: "../images/articles/projects/resedentail/zhk-rams-city-almaty-2023/preview/zhk_rams_city_almaty_2023_1_preview@2x.webp",
+        itemText: "Кафе VANILLA, Алматы 2023 (В процессе реализации)",
+        category: "residential",
+    },
 ]
 /* ПРОЕКТЫ [end] */
 
