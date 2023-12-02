@@ -732,10 +732,10 @@ textarea.form__input {
   bottom: 0;
   left: 0;
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #000000;
   z-index: 1;
   transition: all 1s ease-out;
 }
@@ -1101,5 +1101,36 @@ img {
 
 /* Active classes [end] */
 /* "style.css" [end] */
+/* ARTICLES - LAZY LOADING */
+picture {
+  max-width: calc(100% - 7rem);
+}
+
+.article__img {
+  min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+  picture {
+    max-width: calc(100% - 5rem);
+  }
+  .article__img {
+    min-height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  picture {
+    max-width: 100%;
+  }
+  .article__img {
+    min-height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .article__img {
+    min-height: 200px;
+  }
+}
+/* ARTICLES - LAZY LOADING [end] */
 
 /*# sourceMappingURL=style.css.map */
