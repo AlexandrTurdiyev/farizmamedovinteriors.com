@@ -135,5 +135,13 @@ const designItems = [
         itemText: "ELLE.COM, Казахстан",
         category: "articles",
     },
+    {
+        /* 11 */
+        itemName: "item-11",
+        itemUrl: "https://design-mate.ru/read/objects/interior/strict-apartment-interior-with-mountain-views-and-contrasting-details--project-by-fariz-mamedov/",
+        itemImgUrl: "../images/publications/items-preview/articles/item-11_preview@2x.webp",
+        itemText: "Design Mate, Россия",
+        category: "articles",
+    },
 ]
 /* ПУБЛИКАЦИИ [end] */
