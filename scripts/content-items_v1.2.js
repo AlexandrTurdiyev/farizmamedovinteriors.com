@@ -49,6 +49,14 @@ const architectureItems = [
         itemText: "ЖК Rams City, Алматы 2023 (В процессе реализации)",
         category: "residential",
     },
+    {
+        /* 7 */
+        itemName: "item-7",
+        itemUrl: "../pages/articles/projects/residential/zhk-khan-tengri-almaty-2023.html",
+        itemImgUrl: "../images/articles/projects/resedentail/zhk-khan-tengri-almaty-2023/preview/zhk_khan_tengri_almaty_2023_1_preview@2x.webp",
+        itemText: "'ЖК Хан-Тенгри, Алматы 2023",
+        category: "residential",
+    },
 ]
 /* ПРОЕКТЫ [end] */
 
