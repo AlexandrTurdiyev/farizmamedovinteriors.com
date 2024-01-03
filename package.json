@@ -138,7 +138,6 @@
     "html-entities": "^2.4.0",
     "html-loader": "^4.2.0",
     "html-minifier-terser": "^6.1.0",
-    "html-webpack-plugin": "^5.6.0",
     "htmlparser2": "^6.1.0",
     "http-deceiver": "^1.2.7",
     "http-errors": "^2.0.0",
@@ -369,6 +368,7 @@
     "yocto-queue": "^1.0.0"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
     "webpack": "^5.89.0"
   },
   "scripts": {
