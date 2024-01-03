@@ -18,5 +18,17 @@ module.exports = {
         clean: true,
         filename: 'index.[contenthash].js'
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'index.html')
+        }),
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.html/i,
+                loader: 'html-loader'
+            }
+        ]
+    }
 }
