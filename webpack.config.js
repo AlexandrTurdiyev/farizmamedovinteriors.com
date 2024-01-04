@@ -56,10 +56,10 @@ module.exports = {
                 ],
             },
             {
-                test: /\.woff?$/i,
+                test: /\.ttf$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: "fonts/[name].[ext]"
+                    filename: "fonts/[name][ext]"
                 }
             },
             {
