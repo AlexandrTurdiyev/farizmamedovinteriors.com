@@ -4,8 +4,9 @@
   padding: 0;
 }
 
-body {
-  font-family: Cormorant, serif;
+html {
+  font-family: $htmlFontFamily;
+  font-weight: bold;
 }
 
 a {
@@ -15,7 +16,6 @@ a {
 
 ul {
   list-style: none;
-  font-family: Cormorant, serif;
 }
 
 h1.header-logo {
