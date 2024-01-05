@@ -4,9 +4,14 @@
   padding: 0;
 }
 
-html {
-  font-family: $htmlFontFamily;
-  font-weight: bold;
+body {
+  background-color: $bodyBackgroundColor;
+}
+
+nav {
+  font-family: $headerFontFamily;
+  font-size: $headerFontSize;
+  font-weight: $headerFontWeight;
 }
 
 a {
@@ -21,7 +26,9 @@ ul {
 h1.header-logo {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-family: $headerFontFamily;
+  font-size: $headerFontSize;
+  font-weight: $headerFontWeight;
 }
 
 .container {
@@ -32,6 +39,8 @@ h1.header-logo {
 }
 
 .header {
+  font-family: Cormorant, serif;
+  font-weight: 700;
   &__inner {
     display: flex;
     gap: 2rem;
