@@ -54,6 +54,7 @@ h1.header-logo {
 
 .header a{
   position: relative;
+  white-space: nowrap;
 }
 .header a:hover {}
 .header a::before {
@@ -83,5 +84,12 @@ h1.header-logo {
     position: absolute;
     bottom: 1.6rem;
     left: 1.6rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .header__inner,
+  .header-menu {
+    flex-wrap: wrap;
   }
 }
