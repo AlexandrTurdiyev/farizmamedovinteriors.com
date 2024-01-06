@@ -11,10 +11,9 @@ body {
   background-size: cover;
   inset: 0;
   animation: background-slider 20s infinite;
-}
-
-.background-slider__images-preloader {
-  animation: background-images-preloader 1s linear;
+  &__images-preloader {
+    animation: background-images-preloader 1s linear;
+  }
 }
 
 @keyframes background-images-preloader {
@@ -36,4 +35,25 @@ body {
 
   75% {background-image: url("images/background-slider/background-image-4.jpg")}
   95% {background-image: url("images/background-slider/background-image-4.jpg")}
+}
+
+h1.header-logo,
+.header-menu__link,
+.footer__signature {
+  animation: change-text-color 20s infinite;
+  color: white;
+}
+
+@keyframes change-text-color  {
+  1% {color: white;} //white
+  20% {color: white;} //white
+
+  25% {color: white;} //white
+  45% {color: white;} //white
+
+  50% {color: black;} //black
+  70% {color: black;} //black
+  75% {color: black;}
+  95% {color: black;}
+  98% {color: white;}
 }
