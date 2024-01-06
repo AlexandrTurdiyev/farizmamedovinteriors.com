@@ -16,6 +16,7 @@ body {
   }
 }
 
+
 @keyframes background-images-preloader {
   0% {background-image: url("images/background-slider/background-image-1.jpg")}
   25% {background-image: url("images/background-slider/background-image-2.jpg")}
@@ -56,4 +57,24 @@ h1.header-logo,
   75% {color: black;}
   95% {color: black;}
   98% {color: white;}
+}
+
+
+header a::before {
+  animation: change-underline-links-color 20s infinite;
+  color: white;
+}
+
+@keyframes change-underline-links-color {
+  1% {background-color: white;}
+  20% {background-color: white;}
+
+  25% {background-color: white;}
+  45% {background-color: white;}
+
+  50% {background-color: black;}
+  70% {background-color: black;}
+  75% {background-color: black;}
+  95% {background-color: black;}
+  98% {background-color: white;}
 }
