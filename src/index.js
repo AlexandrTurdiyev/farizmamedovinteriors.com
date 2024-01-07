@@ -1,3 +1,3 @@
 import './index.html';
 import './index.scss';
-import './modules/preloader/_preloader'
+import './modules/preloader/_preloader';
