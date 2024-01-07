@@ -1,19 +1,13 @@
-@import "variables";
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: $bodyBackgroundColor;
-}
-
 nav {
   font-family: $headerFontFamily;
   font-size: $headerFontSize;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a {
@@ -30,7 +24,7 @@ h1.header-logo {
   padding: 0;
   font-family: $headerFontFamily;
   font-size: $headerFontSize;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .container {

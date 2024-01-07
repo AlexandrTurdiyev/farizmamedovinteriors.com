@@ -1,2 +1,2 @@
-import("./styles/_variables.scss")
-import("./styles/_header-styles.scss")
+import('./about-us.html')
+import('./about-us.scss')
