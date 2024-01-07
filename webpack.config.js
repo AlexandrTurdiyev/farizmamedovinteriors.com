@@ -18,7 +18,10 @@ module.exports = {
         open: true,
         hot: true,
     },
-    entry: [path.resolve(__dirname, 'src', 'index.js')],
+    entry: {
+        homePage: './src/index.js',
+        aboutPage: './src/about-us.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
@@ -28,11 +31,15 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: path.resolve(__dirname, 'src', 'index.html')
+            template: path.resolve(__dirname, 'src', 'index.html'),
+            chunks: ["homePage"],
+            publicPath: '',
         }),
         new HtmlWebpackPlugin({
             filename: "about-us.html",
-            template: path.resolve(__dirname, 'src/pages', 'about-us.html')
+            template: path.resolve(__dirname, 'src', 'about-us.html'),
+            chunks: ["aboutPage"],
+            publicPath: '',
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
