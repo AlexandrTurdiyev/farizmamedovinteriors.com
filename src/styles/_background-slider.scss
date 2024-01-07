@@ -16,6 +16,17 @@ body {
   }
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  &__signature {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+  }
+}
+
 
 @keyframes background-images-preloader {
   0% {background-image: url("images/background-slider/background-image-1.jpg")}

@@ -60,19 +60,6 @@ ul {
   transition: transform .3s;
 }
 
-
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  &__signature {
-    position: absolute;
-    bottom: 1.6rem;
-    left: 1.6rem;
-  }
-}
-
 @media (max-width: 680px) {
   .header__inner,
   .header-menu {

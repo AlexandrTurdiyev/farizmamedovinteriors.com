@@ -21,6 +21,7 @@ module.exports = {
     entry: {
         homePage: './src/index.js',
         aboutPage: './src/about-us.js',
+        projectsPage: './src/projects.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -34,12 +35,21 @@ module.exports = {
             template: path.resolve(__dirname, 'src', 'index.html'),
             chunks: ["homePage"],
             publicPath: '',
+            inject: 'body',
         }),
         new HtmlWebpackPlugin({
             filename: "about-us.html",
             template: path.resolve(__dirname, 'src', 'about-us.html'),
             chunks: ["aboutPage"],
             publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: "projects.html",
+            template: path.resolve(__dirname, 'src', 'projects.html'),
+            chunks: ["projectsPage"],
+            publicPath: '',
+            inject: 'body',
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'

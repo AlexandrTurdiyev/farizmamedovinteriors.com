@@ -116,6 +116,12 @@ p {
   }
 }
 
+.footer {
+  &__signature {
+    padding: 1.6rem;
+  }
+}
+
 
 @media (max-width: 769px) {
   .header__inner {
@@ -128,6 +134,6 @@ p {
 
 @media (max-width: 481px) {
   main {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
