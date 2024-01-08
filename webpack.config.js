@@ -23,6 +23,7 @@ module.exports = {
         aboutPage: './src/about-us.js',
         projectsPage: './src/projects.js',
         publicationsPage: './src/projects.js',
+        blogPage: './src/blog.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -56,6 +57,13 @@ module.exports = {
             filename: "publications.html",
             template: path.resolve(__dirname, 'src', 'publications.html'),
             chunks: ["publicationsPage"],
+            publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: "blog.html",
+            template: path.resolve(__dirname, 'src', 'blog.html'),
+            chunks: ["blogPage"],
             publicPath: '',
             inject: 'body',
         }),
