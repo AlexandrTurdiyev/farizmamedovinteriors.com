@@ -52,7 +52,7 @@ p {
 .header {
   font-family: Cormorant, serif;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   &__inner {
     display: flex;
     gap: 2rem;
@@ -125,7 +125,7 @@ p {
 .projects,
 .publications {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr 1fr;
   &__filter {
     //border: 1px solid grey;
     min-width: 10rem;
@@ -168,6 +168,9 @@ p {
 }
 
 @media (max-width: 769px) {
+  .header {
+    margin-bottom: 5rem;
+  }
   .projects,
   .publications {
     &__catalog {
