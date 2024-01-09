@@ -1,0 +1,81 @@
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+}
+
+.form {
+  font-size: 1.5rem;
+  &__button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    list-style: none;
+    margin-top: 1rem;
+  }
+  &__button:hover {
+    box-shadow: 0 0 5px #707b85;
+    &:last-child {
+      background-color: black;
+    }
+  }
+  &__button:hover {
+    box-shadow: 0 0 5px #707b85;
+  }
+  &__button-inner {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+  &__button-frame-img {
+    position: absolute;
+    inset: 0;
+  }
+  &__button-plane-img {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: send-message 1s infinite;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  transition: box-shadow 0.25s ease 0s;
+  color: #757575;
+  &:focus {
+    box-shadow: 0 0 2px #707b85;
+    transform: scale(1.01);
+    color: #414141;
+  }
+}
+
+textarea {
+  min-height: 4rem;
+  resize: vertical;
+  border: none;
+  border-bottom: 1px solid grey;
+  transition: box-shadow 0.25s ease 0s;
+  color: #757575;
+  &:focus {
+    box-shadow: 0 0 2px #707b85;
+    transform: scale(1.01);
+    color: #414141;
+  }
+}
+
+@keyframes send-message {
+  0% {transform: translate(-50%, -50%)}
+  50% {transform: translate(-25%, -25%)}
+  100% {transform: translate(-10%, -10%)}
+}
+

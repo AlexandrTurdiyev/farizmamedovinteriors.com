@@ -1,0 +1,29 @@
+@import "styles/normalize.css";
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/base-styles";
+@import "styles/header-styles";
+@import "styles/modificators";
+@import "styles/form";
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 5rem;
+  max-width: calc(100% - 10rem);
+  &__item-bg-img {
+    background-image: url("../src/images/contact/contact-item-img_@2x.webp");
+    background-size: cover;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  min-height: 100%;
+}
