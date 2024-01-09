@@ -4,6 +4,9 @@ input:focus, textarea:focus, select:focus {
 
 .form {
   font-size: 1.5rem;
+  &__title {
+    color: #757575;
+  }
 }
 
 label {
