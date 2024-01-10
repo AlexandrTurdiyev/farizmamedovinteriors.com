@@ -26,6 +26,7 @@ module.exports = {
         blogPage: './src/blog.js',
         contactPage: './src/contact.js',
         naKalininaAlmaty2022articleResedentialProject: './src/articles.js',
+        zhkOscarAlmaty2022ArticleResedentialProject: './src/articles.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -83,6 +84,14 @@ module.exports = {
             publicPath: '',
             inject: 'body',
         }),
+        new HtmlWebpackPlugin({
+            filename: 'zhk-oscar-almaty-2022.html',
+            template: path.resolve(__dirname, 'src/pages/projects/residential/zhk-oscar-almaty-2022/', 'zhk-oscar-almaty-2022.html'),
+            chunks: ["zhkOscarAlmaty2022ArticleResedentialProject"],
+            publicPath: '',
+            inject: 'body',
+        }),
+
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         })
