@@ -132,7 +132,7 @@ module.exports = {
             inject: 'body',
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: '[name].[contenthash].css',
         })
     ],
     module: {
