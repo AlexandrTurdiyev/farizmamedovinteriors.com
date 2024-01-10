@@ -28,6 +28,10 @@ module.exports = {
         naKalininaAlmaty2022articleResedentialProject: './src/articles.js',
         zhkOscarAlmaty2022ArticleResedentialProject: './src/articles.js',
         zhkAtlantAlmaty2021ArticleResedentialProject: './src/articles.js',
+        zhkRamsCityAlmaty2023ArticleResedentialProject: './src/articles.js',
+        zhkKhanTengriAlmaty2023ArticleResedentialProject: './src/articles.js',
+        cafeVanillaAlmaty2023ArticleCommercialProject: './src/articles.js',
+        kofejnyaMomentoAlmaty2023ArticleCommercialProject: './src/articles.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -99,7 +103,34 @@ module.exports = {
             publicPath: '',
             inject: 'body',
         }),
-
+        new HtmlWebpackPlugin({
+            filename: 'zhk-rams-city-almaty-2023.html',
+            template: path.resolve(__dirname, 'src/pages/projects/residential/zhk-rams-city-almaty-2023/', 'zhk-rams-city-almaty-2023.html'),
+            chunks: ["zhkRamsCityAlmaty2023ArticleResedentialProject"],
+            publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'zhk-khan-tengri-almaty-2023.html',
+            template: path.resolve(__dirname, 'src/pages/projects/residential/zhk-khan-tengri-almaty-2023/', 'zhk-khan-tengri-almaty-2023.html'),
+            chunks: ["zhkKhanTengriAlmaty2023ArticleResedentialProject"],
+            publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cafe-vanilla-almaty-2023.html',
+            template: path.resolve(__dirname, 'src/pages/projects/commercial/cafe-vanilla-almaty-2023/', 'cafe-vanilla-almaty-2023.html'),
+            chunks: ["cafeVanillaAlmaty2023ArticleCommercialProject"],
+            publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'kofejnya-momento-almaty-2023.html',
+            template: path.resolve(__dirname, 'src/pages/projects/commercial/kofejnya-momento-almaty-2023/', 'kofejnya-momento-almaty-2023.html'),
+            chunks: ["kofejnyaMomentoAlmaty2023ArticleCommercialProject"],
+            publicPath: '',
+            inject: 'body',
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         })
