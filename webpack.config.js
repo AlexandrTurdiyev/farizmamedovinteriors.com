@@ -25,6 +25,7 @@ module.exports = {
         publicationsPage: './src/projects.js',
         blogPage: './src/blog.js',
         contactPage: './src/contact.js',
+        naKalininaAlmaty2022articleResedentialProject: './src/articles.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -72,6 +73,13 @@ module.exports = {
             filename: 'contact.html',
             template: path.resolve(__dirname, 'src', 'contact.html'),
             chunks: ["contactPage"],
+            publicPath: '',
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'na-kalinina-almaty-2022.html',
+            template: path.resolve(__dirname, 'src/pages/projects/residential/na-kalinina-almaty-2022/', 'na-kalinina-almaty-2022.html'),
+            chunks: ["naKalininaAlmaty2022articleResedentialProject"],
             publicPath: '',
             inject: 'body',
         }),
