@@ -7,15 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Связаться с Fariz Mamedov Interiors</title>
 
-    <style> .page-content {display: none;} .preloader__logo {opacity: 0;}</style>
+    <style>
+        .header-content {visibility: hidden;}
+        .page-content {display: none;}
+        .preloader__logo {opacity: 0;}
+    </style>
 </head>
 <body>
 <div class="preloader preloader--visible">
     <img class="preloader__logo" src="images/preloaders/fm-interiors-logo_compress.svg" alt="preloader-img">
 </div>
-
-<div class="page-content">
-    <div class="container">
+<div class="container">
+    <div class="header-content">
         <header class="header">
             <div class="header__inner">
                 <a href="index.html" class="header-logo-link"><h1 class="header-logo">FM INTERIORS</h1></a>
@@ -40,8 +43,9 @@
                 </nav>
             </div>
         </header>
+    </div>
+    <div class="page-content">
         <main class="main">
-
             <div class="contact">
                 <div class="contact__item contact__item-bg-img"></div>
                 <div class="contact__item">
@@ -87,7 +91,12 @@
         <footer class="footer">
             <p class="footer__signature">Fariz Mamedov</p>
         </footer>
-    </div>>
-</div>
+    </div>
+</div>>
+<script>
+    document.fonts.ready.then(function () {
+        document.querySelector('.header-content').style.visibility = 'visible';
+    });
+</script>
 </body>
 </html>

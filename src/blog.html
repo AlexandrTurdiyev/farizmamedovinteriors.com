@@ -7,39 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Блог. Fariz Mamedov Interiors</title>
 
-    <style> .page-content {display: none;} .preloader__logo {opacity: 0;}</style>
+    <style>
+        .header-content {visibility: hidden;}
+        .page-content {display: none;}
+        .preloader__logo {opacity: 0;}
+    </style>
 </head>
 <body>
 <div class="preloader preloader--visible">
     <img class="preloader__logo" src="images/preloaders/fm-interiors-logo_compress.svg" alt="preloader-img">
 </div>
-
-<div class="page-content">
-    <div class="container">
-        <header class="header">
-            <div class="header__inner">
-                <a href="index.html" class="header-logo-link"><h1 class="header-logo">FM INTERIORS</h1></a>
-                <nav>
-                    <ul class="header-menu">
-                        <li class="header-menu__item">
-                            <a href="about-us.html" class="header-menu__link">О НАС</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="projects.html" class="header-menu__link">ПРОЕКТЫ</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="publications.html" class="header-menu__link">ПУБЛИКАЦИИ</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="blog.html" class="header-menu__link link--active">БЛОГ</a>
-                        </li>
-                        <li class="header-menu__item">
-                            <a href="contact.html" class="header-menu__link">СВЯЗАТЬСЯ</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<div class="container">
+    <div class="header-content">
+            <header class="header">
+                <div class="header__inner">
+                    <a href="index.html" class="header-logo-link"><h1 class="header-logo">FM INTERIORS</h1></a>
+                    <nav>
+                        <ul class="header-menu">
+                            <li class="header-menu__item">
+                                <a href="about-us.html" class="header-menu__link">О НАС</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="projects.html" class="header-menu__link">ПРОЕКТЫ</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="publications.html" class="header-menu__link">ПУБЛИКАЦИИ</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="blog.html" class="header-menu__link link--active">БЛОГ</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="contact.html" class="header-menu__link">СВЯЗАТЬСЯ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    <div class="page-content">
         <main class="main">
 
             <div class="blog">
@@ -57,7 +62,7 @@
                                     gyroscope;
                                     picture-in-picture;
                                     web-share"
-                                allowfullscreen>
+                                allowfullscreen loading="lazy">
                         </iframe>
                         <h2 class="blog__item-heading">
                             РумТур: Небольшой бюджет - Смелые решения!
@@ -76,7 +81,7 @@
                                     gyroscope;
                                     picture-in-picture;
                                     web-share"
-                                allowfullscreen>
+                                allowfullscreen loading="lazy">
                         </iframe>
                         <h2 class="blog__item-heading">
                             РумТур: Лаконичный современный
@@ -97,7 +102,7 @@
                                     gyroscope;
                                     picture-in-picture;
                                     web-share"
-                                allowfullscreen>
+                                allowfullscreen loading="lazy">
                         </iframe>
                         <h2 class="blog__item-heading">
                             Тренды дизайна интерьера в 2024 году!
@@ -118,7 +123,7 @@
                                     gyroscope;
                                     picture-in-picture;
                                     web-share"
-                                allowfullscreen>
+                                allowfullscreen loading="lazy">
                         </iframe>
                         <h2 class="blog__item-heading">
                             СКАНДИНАВСКИЙ РАЙ: Стокгольмская
@@ -139,7 +144,7 @@
                             gyroscope;
                             picture-in-picture;
                             web-share"
-                                allowfullscreen>
+                                allowfullscreen loading="lazy">
                         </iframe>
                         <h2 class="blog__item-heading">
                             Квартира архитектора Ле Корбюзье
@@ -154,5 +159,10 @@
         </footer>
     </div>>
 </div>
+<script>
+    document.fonts.ready.then(function () {
+        document.querySelector('.header-content').style.visibility = 'visible';
+    });
+</script>
 </body>
 </html>
