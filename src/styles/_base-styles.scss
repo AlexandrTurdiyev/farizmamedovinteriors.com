@@ -151,9 +151,12 @@ p {
   }
   &__catalog-item-preview-img {
     width: 100%;
+    margin-bottom: 0.5rem;
   }
   &__catalog-item-link {
-
+    color: $previewsTitleTextColor;
+    font-weight: $previewsTitleTextWeight;
+    font-size: $previewsTitleTextSize;
   }
   &__catalog-item-link::after {
     content: '';
