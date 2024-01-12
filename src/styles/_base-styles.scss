@@ -130,6 +130,11 @@ p {
     min-width: 10rem;
     margin-bottom: 2rem;
   }
+  &__filter-item {
+    cursor: pointer;
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+  }
   &__catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
