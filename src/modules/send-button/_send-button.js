@@ -11,7 +11,6 @@ contactForm.addEventListener('submit', function (event){
     formSubmit();
 });
 
-
 /* - fields check */
 function isRequiredFieldsFilling () {
     const requiredFields = document.querySelectorAll('input[required]');
@@ -24,13 +23,15 @@ function isRequiredFieldsFilling () {
 /* - fields check [end] */
 
 /* - submit form */
-button.addEventListener('click', event => {
+function buttonClickReaction () {
     if (isRequiredFieldsFilling()) {
         formSubmit();
     } else {
         buttonShaking();
     }
-})
+}
+
+button.onclick = buttonClickReaction;
 function formSubmit () {
         button.disabled = true;
         buttonText.classList.add('opacity--zero');
@@ -73,7 +74,5 @@ function buttonShaking () {
         button.classList.remove('button--shaking')
     }
 }
-
 /* - submit form [end] */
 /* Form handler [end] */
-

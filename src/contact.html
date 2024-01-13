@@ -69,13 +69,20 @@
                             <label>Ваш город*<input class="form__input" type="text" name="Город" placeholder="" required></label><br>
                         </div>
                         <div class="form__item">
-                            <label>Площадь объекта*<input class="form__input" type="text" name="Площадь" placeholder="" required></label><br>
+                            <label>Площадь объекта (м²)*
+                                <input
+                                        id="inputSquare"
+                                        class="form__input"
+                                        type="number"
+                                        step="0.2"
+                                        name="Площадь"
+                                        placeholder="" required></label><br>
                         </div>
                         <div class="form__item">
                             <label>Ваш E-mail*<input class="form__input" type="text" name="E-mail" placeholder="" required></label><br>
                         </div>
                         <div class="form__item">
-                            <label>Вопросы и комментарии*<textarea class="form__input" name="Сообщение" placeholder=""></textarea>
+                            <label>Вопросы и комментарии<textarea class="form__input" name="Сообщение" placeholder=""></textarea>
                             </label>
                         </div>
                         <button class="button">
