@@ -20,11 +20,16 @@ function isRequiredFieldsFilling () {
     })
     return emptyRequiredFieldsCount === 0;
 }
+
+function isEmailFieldCorrect () {
+    const emailField = document.getElementById('email');
+
+}
 /* - fields check [end] */
 
 /* - submit form */
 function buttonClickReaction () {
-    if (isRequiredFieldsFilling()) {
+    if (isRequiredFieldsFilling() && isEmailFieldCorrect()) {
         formSubmit();
     } else {
         buttonShaking();
