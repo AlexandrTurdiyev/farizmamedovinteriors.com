@@ -125,7 +125,7 @@ p {
 .projects,
 .publications {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 0.5fr;
   &__filter {
     min-width: 10rem;
     margin-bottom: 2rem;
@@ -168,6 +168,7 @@ p {
 @media (max-width: 1200px) {
   .projects,
   .publications {
+    grid-template-columns: 1fr 4fr 0.2fr;
     &__catalog {
       grid-template-columns: repeat(2, 1fr);
     }
