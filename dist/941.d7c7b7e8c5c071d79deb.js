@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfarizmamedovinteriors_com=self.webpackChunkfarizmamedovinteriors_com||[]).push([[941],{2941:function(e,i,r){r.r(i)}}]);
