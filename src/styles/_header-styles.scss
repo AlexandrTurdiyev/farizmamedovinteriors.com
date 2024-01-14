@@ -1,0 +1,17 @@
+nav {
+  font-family: $headerFontFamily;
+  font-size: $headerFontSize;
+  font-weight: 600;
+}
+
+h1.header-logo {
+  font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  .header__inner,
+  .header-menu {
+    flex-wrap: wrap;
+  }
+}
+

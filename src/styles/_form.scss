@@ -1,0 +1,45 @@
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+}
+
+.form {
+  font-size: 1.5rem;
+  &__title {
+    color: #757575;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  transition: box-shadow 0.25s ease 0s;
+  color: #757575;
+  &:focus {
+    box-shadow: 0 0 2px #707b85;
+    transform: scale(1.01);
+    color: #414141;
+  }
+}
+
+textarea {
+  min-height: 4rem;
+  resize: vertical;
+  border: none;
+  border-bottom: 1px solid grey;
+  transition: box-shadow 0.25s ease 0s;
+  color: #757575;
+  margin-bottom: 1rem;
+  &:focus {
+    box-shadow: 0 0 2px #707b85;
+    transform: scale(1.01);
+    color: #414141;
+  }
+}

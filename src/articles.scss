@@ -1,0 +1,68 @@
+@import "styles/normalize.css";
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/base-styles";
+@import "styles/header-styles";
+@import "styles/modificators";
+@import "modules/preloader/preloader";
+
+.article {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-areas:
+            "navArea imagesArea descriptionArea"
+            "navArea imagesArea descriptionArea"
+            "navArea imagesArea descriptionArea"
+
+;
+  &__images {
+    grid-area: imagesArea;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__description-wrapper {
+    position: sticky;
+    top: 1rem;
+  }
+  &__description {
+    grid-area: descriptionArea;
+  }
+}
+
+.article-nav-images-wrapper {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 5fr;
+}
+
+.article-nav-panel {
+  grid-area: navArea;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .article {
+    grid-template-areas:
+        "navArea  navArea navArea"
+        "imagesArea imagesArea descriptionArea"
+        "imagesArea imagesArea descriptionArea"
+  }
+}
+
+@media (max-width: 769px) {
+  .article {
+    grid-template-areas:
+        "navArea  navArea navArea"
+        "descriptionArea descriptionArea descriptionArea"
+        "imagesArea imagesArea imagesArea"
+  }
+}
