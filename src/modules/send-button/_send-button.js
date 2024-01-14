@@ -23,7 +23,6 @@ function isRequiredFieldsFilling () {
 
 function isEmailFieldCorrect () {
     const emailField = document.getElementById('email');
-
 }
 /* - fields check [end] */
 
@@ -31,7 +30,9 @@ function isEmailFieldCorrect () {
 function buttonClickReaction () {
     if (isRequiredFieldsFilling() && isEmailFieldCorrect()) {
         formSubmit();
-    } else {
+    } else if (
+        !isRequiredFieldsFilling() && !isEmailFieldCorrect()
+    ) {
         buttonShaking();
     }
 }
