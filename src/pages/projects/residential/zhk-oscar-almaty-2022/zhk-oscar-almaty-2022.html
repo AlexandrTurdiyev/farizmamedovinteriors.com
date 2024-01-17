@@ -15,10 +15,30 @@
         .header-content {visibility: hidden;}
         .page-content {display: none;}
         .preloader__logo {opacity: 0;}
+        #scrollTop {
+            position: fixed;
+            bottom: 2rem;
+            right: 1rem;
+            z-index: 10;
+        }
+        .arrow-to-top {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        .arrow-to-top__img {
+            width: 48px;
+            height: 48px;
+        }
+        .arrow-to-top--hide {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
 <div class="container">
+    <div id="scrollTop" class="arrow-to-top arrow-to-top--hide">
+        <img class="arrow-to-top__img" src="../../../../images/icons/scroll-to-top.svg" alt="scroll-to-top-img">
+    </div>
     <div class="header-content">
         <header class="header">
             <div class="header__inner">

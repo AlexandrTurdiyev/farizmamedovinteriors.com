@@ -8,3 +8,4 @@ import('./pages/projects/commercial/kofejnya-momento-almaty-2023/kofejnya-moment
 import('./modules/preloader/_preloader');
 import('./modules/content-load/content-load');
 import('./articles.scss')
+import('./modules/scroll-to-top/_scroll-to-top');
