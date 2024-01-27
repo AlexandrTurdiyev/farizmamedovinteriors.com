@@ -29,6 +29,7 @@ main {
   .contact {
     grid-template-columns: 1fr;
     max-width: 100%;
+    gap: 0;
   }
   .contact__item-bg-img {
     min-height: 50vh;
