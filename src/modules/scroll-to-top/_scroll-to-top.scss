@@ -1,0 +1,18 @@
+#scrollTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.arrow-to-top {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.arrow-to-top__img {
+  width: 48px;
+  height: 48px;
+}
+.arrow-to-top--hide {
+  opacity: 0;
+}
