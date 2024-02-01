@@ -6,7 +6,7 @@ body {
 
 .background-slider {
   position: absolute;
-  background-image: url("images/background-slider/background-image-1.jpg");
+  background-image: url("images/background-slider/background-image-1.webp");
   background-position: center;
   background-size: cover;
   inset: 0;
@@ -29,24 +29,24 @@ body {
 
 
 @keyframes background-images-preloader {
-  0% {background-image: url("images/background-slider/background-image-1.jpg")}
-  25% {background-image: url("images/background-slider/background-image-2.jpg")}
-  50% {background-image: url("images/background-slider/background-image-3.jpg")}
-  75% {background-image: url("images/background-slider/background-image-4.jpg")}
+  0% {background-image: url("images/background-slider/background-image-1.webp")}
+  25% {background-image: url("images/background-slider/background-image-2.webp")}
+  50% {background-image: url("images/background-slider/background-image-3.webp")}
+  75% {background-image: url("images/background-slider/background-image-4.webp")}
 }
 
 @keyframes background-slider  {
-  0% {background-image: url("images/background-slider/background-image-1.jpg")}
-  20% {background-image: url("images/background-slider/background-image-1.jpg")}
+  0% {background-image: url("images/background-slider/background-image-1.webp")}
+  20% {background-image: url("images/background-slider/background-image-1.webp")}
 
-  25% {background-image: url("images/background-slider/background-image-2.jpg")}
-  45% {background-image: url("images/background-slider/background-image-2.jpg")}
+  25% {background-image: url("images/background-slider/background-image-2.webp")}
+  45% {background-image: url("images/background-slider/background-image-2.webp")}
 
-  50% {background-image: url("images/background-slider/background-image-3.jpg")}
-  70% {background-image: url("images/background-slider/background-image-3.jpg")}
+  50% {background-image: url("images/background-slider/background-image-3.webp")}
+  70% {background-image: url("images/background-slider/background-image-3.webp")}
 
-  75% {background-image: url("images/background-slider/background-image-4.jpg")}
-  95% {background-image: url("images/background-slider/background-image-4.jpg")}
+  75% {background-image: url("images/background-slider/background-image-4.webp")}
+  95% {background-image: url("images/background-slider/background-image-4.webp")}
 }
 
 h1.header-logo,

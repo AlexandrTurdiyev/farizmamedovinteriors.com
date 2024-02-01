@@ -9,3 +9,7 @@ if (
     setTimeout(function(){preloader.classList.add('preloader--hide')}, 2500);
 }
 
+
+
+
+

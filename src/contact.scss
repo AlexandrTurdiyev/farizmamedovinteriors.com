@@ -6,6 +6,7 @@
 @import "styles/modificators";
 @import "styles/form";
 @import "modules/preloader/preloader";
+@import 'modules/scroll-to-top/scroll-to-top';
 
 .contact {
   display: grid;
@@ -28,6 +29,7 @@ main {
   .contact {
     grid-template-columns: 1fr;
     max-width: 100%;
+    gap: 0;
   }
   .contact__item-bg-img {
     min-height: 50vh;

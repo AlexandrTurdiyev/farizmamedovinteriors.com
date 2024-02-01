@@ -5,6 +5,7 @@
 @import "styles/header-styles";
 @import "styles/modificators";
 @import "modules/preloader/preloader";
+@import 'modules/scroll-to-top/scroll-to-top';
 
 .article {
   display: grid;
@@ -43,9 +44,25 @@
 .article-nav-panel {
   grid-area: navArea;
   &__item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-left: 1rem;
+  }
+  &__link {
+    position: absolute;
+    inset: 0;
+  }
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__text-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
   }
 }
 
