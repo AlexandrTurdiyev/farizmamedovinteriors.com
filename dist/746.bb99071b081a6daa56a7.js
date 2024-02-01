@@ -1,1 +1,0 @@
-(self.webpackChunkfarizmamedovinteriors_com=self.webpackChunkfarizmamedovinteriors_com||[]).push([[746],{2746:function(){window.addEventListener("load",(function(){document.querySelector(".page-content").style.display="block"}))}}]);

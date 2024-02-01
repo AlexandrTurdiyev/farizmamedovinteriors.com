@@ -1,1 +1,0 @@
-(self.webpackChunkfarizmamedovinteriors_com=self.webpackChunkfarizmamedovinteriors_com||[]).push([[400],{5400:function(){const o=document.querySelector(".arrow-to-top");window.onscroll=()=>{window.scrollY>400?o.classList.remove("arrow-to-top--hide"):window.scrollY<400&&o.classList.add("arrow-to-top--hide")},o.onclick=()=>{window.scrollTo(0,0)}}}]);
