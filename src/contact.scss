@@ -1,0 +1,37 @@
+@import "styles/normalize.css";
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/base-styles";
+@import "styles/header-styles";
+@import "styles/modificators";
+@import "styles/form";
+@import "modules/preloader/preloader";
+@import 'modules/scroll-to-top/scroll-to-top';
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 5rem;
+  max-width: calc(100% - 10rem);
+  &__item-bg-img {
+    background-image: url("../src/images/contact/contact-item-img_@2x.webp");
+    background-size: cover;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 0;
+  }
+  .contact__item-bg-img {
+    min-height: 50vh;
+  }
+}

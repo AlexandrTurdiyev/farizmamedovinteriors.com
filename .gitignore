@@ -1,2 +1,10 @@
-.idea/
-dev-temp/
+.idea
+dev-temp
+node_modules
+src
+.browserslistrc
+.babel.config.json
+.dev-info.md
+package.json
+package-lock.json
+webpack.config.js

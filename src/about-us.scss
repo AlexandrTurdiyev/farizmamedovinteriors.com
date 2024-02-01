@@ -1,0 +1,26 @@
+@import "styles/normalize.css";
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/base-styles";
+@import "styles/header-styles";
+@import "styles/modificators";
+@import "modules/preloader/preloader";
+@import 'modules/scroll-to-top/scroll-to-top';
+
+
+.about {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-bottom: 5rem;
+  &__image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}

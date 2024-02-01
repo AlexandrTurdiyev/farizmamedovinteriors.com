@@ -1,0 +1,34 @@
+@import "styles/normalize.css";
+@import "styles/variables";
+@import "styles/fonts";
+@import "styles/base-styles";
+@import "styles/header-styles";
+@import "styles/modificators";
+@import "modules/preloader/preloader";
+@import 'modules/scroll-to-top/scroll-to-top';
+
+.blog {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  &__item {
+    width: calc(100% - 1rem);
+    max-width: 650px;
+  }
+}
+iframe {
+  width: 100%;
+}
+
+@media (max-width: 481px) {
+  iframe {
+    height: auto;
+  }
+}
+
