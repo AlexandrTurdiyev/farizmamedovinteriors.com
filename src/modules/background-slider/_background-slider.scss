@@ -14,6 +14,14 @@ body {
   }
 }
 
+.low-quality {
+  opacity: 1; /* Изображение плохого качества видимо изначально */
+}
+
+.high-quality {
+  opacity: 0; /* Изображение высокого качества изначально скрыто */
+}
+
 .slide {
   background-color: black;
 }
@@ -76,14 +84,6 @@ body {
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease; /* Анимация смены прозрачности для плавного эффекта */
-}
-
-.low-quality {
-  opacity: 1; /* Изображение плохого качества видимо изначально */
-}
-
-.high-quality {
-  opacity: 0; /* Изображение высокого качества изначально скрыто */
 }
 
 .slide {

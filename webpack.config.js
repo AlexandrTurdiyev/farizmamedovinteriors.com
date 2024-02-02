@@ -176,6 +176,17 @@ module.exports = {
                     }
                 }
             },
+            // {
+            //     test: /\.(png|jpg|jpeg|gif|webp)$/i,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //             options: {
+            //                 name: 'images/[name].[ext]',
+            //             },
+            //         },
+            //     ],
+            // },
         ]
     }
 }
