@@ -91,6 +91,10 @@ p {
   transition: transform .3s;
 }
 
+.header-text {
+  color: black;
+}
+
 .social-media {
   position: relative;
   max-width: fit-content;
@@ -120,7 +124,7 @@ p {
 
 .footer {
   &__signature {
-    padding: 1.6rem;
+
   }
 }
 
