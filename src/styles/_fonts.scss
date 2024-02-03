@@ -2,28 +2,33 @@
   font-family: 'Cormorant';
   src: url('fonts/cormorant/Cormorant-Bold.ttf') format('TrueType');
   font-weight: 700; /* Bold */
+  font-display: swap;
 }
 @font-face {
   font-family: 'Cormorant';
   src: url("fonts/cormorant/Cormorant-BoldItalic.ttf") format('TrueType');
   font-weight: 700; /* Bold */
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Cormorant';
   src: url("fonts/cormorant/Cormorant-Italic.ttf") format('TrueType');
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Cormorant';
   src: url("fonts/cormorant/Cormorant-Light.ttf") format('TrueType');
   font-weight: 300; /* Lighter */
+  font-display: swap;
 }
 @font-face {
   font-family: 'Cormorant';
   src: url("fonts/cormorant/Cormorant-LightItalic.ttf") format('TrueType');
   font-weight: 300; /* Lighter */
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Cormorant';
