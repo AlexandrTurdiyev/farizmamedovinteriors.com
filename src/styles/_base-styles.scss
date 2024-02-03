@@ -69,6 +69,7 @@ p {
 .header a{
   position: relative;
   white-space: nowrap;
+  transition: all 0.5s ease-in-out;
 }
 
 .header a:hover {}
